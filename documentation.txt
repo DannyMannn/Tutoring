@@ -1,0 +1,27 @@
+NodeJS + React Project
+
+1. Whats the project about?
+
+2. Starting the project
+ Create 2 folders. One for the backend (server) and another for the 
+ frontend (client).
+Inside the server folder
+- Run npm init -y inside the server folder 
+- Create an index.js or server.js file for the server inside the server folder
+- npm i express to install express
+- npm i nodemon -D to automatically reload the server
+Inside the client folder
+- "npx create-react-app ." to create the react app inside ther client folder
+
+3. Delete template code if you want...
+4. Configure the server.js file.
+5. Inside the client package.json add "proxy":"http://localhost:5000" to
+   indicate the server's port.
+
+6. Pushing to github
+ - git init -b main 
+ - git add .
+ - git commit -m "Skeleton code for the project"
+ - git remote add origin https://github.com/DannyMannn/Tutoring.git
+ - git push origin main
+ 
