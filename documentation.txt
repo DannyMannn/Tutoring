@@ -25,3 +25,6 @@ Inside the client folder
  - git remote add origin https://github.com/DannyMannn/Tutoring.git
  - git push origin main
  
+7. Running the project
+ - npm install
+ 

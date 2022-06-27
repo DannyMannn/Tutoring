@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  --main-bg-color: #B0B3B8;
+  --button-color: #007fff;
+  --button-hover-color: #338fff;
+  --max-width: 1400px;
+  /*background-color: var(--main-bg-color);*/
+}
+
+.content-wrapper{
+  margin: 2rem;
+}
+
+.main-wrapper{
+  max-width: var(--max-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +28,103 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* NAV BAR*/
+nav{
+  /* Created with https://www.css-gradient.com */
+  background: #2E3BFF;
+  background: -webkit-linear-gradient(top left, #2E3BFF, #5E40E5);
+  background: -moz-linear-gradient(top left, #2E3BFF, #5E40E5);
+  background: linear-gradient(to bottom right, #2E3BFF, #5E40E5);
+}
+
+.nav-bar{
+  padding: 0.5rem 10%;
+  display: flex;
+  justify-content:space-between;
+  justify-items: center; /*Vertical alignment*/
+  align-items: center; /*Horizontal alignment*/
+}
+/**/
+.nav-bar li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  font: bolder;
+  padding-left: 2.5rem;
+}
+
+.nav-bar ul{
+  display: flex;
+}
+
+.nav-bar a:hover{
+  color: #338fff;
+}
+
+/* TOGGLE BUTTON */
+.toggle-button{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media(max-width: 550px){
+  .toggle-button{
+    display: flex;
+  }
+
+  .navbar-links{
+    display: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .nav-bar{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .navbar-links ul{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .navbar-links li a{
+    padding-left: 0;
+  }
+
+  .navbar-links.active{
+    display: flex;
+  }
+}
+
+/*  LOGO */
+
+#main-logo{
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
 }
