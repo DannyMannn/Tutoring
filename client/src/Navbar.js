@@ -4,12 +4,8 @@ import { useState } from "react"
 const Navbar = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     const toggle = () =>{
-        const toggleButton = document.getElementsByClassName('toggle-button')[0]
         const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-        toggleButton.addEventListener('click', () => {
-            navbarLinks.classList.toggle('active')
-        })
+        navbarLinks.classList.toggle('active')
     }    
 
     return (  
@@ -22,7 +18,7 @@ const Navbar = () => {
                     <button 
                     className="toggle-button"
                     onClick={() => {
-                        setIsNavExpanded(!isNavExpanded);
+                        //setIsNavExpanded(!isNavExpanded);
                         toggle();
                       }}
                       >
