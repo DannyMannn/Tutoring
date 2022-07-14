@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="main-wrapper">
                 <div className="nav-bar">
                     <div className="main-logo">
-                        <a href="/"><img src="logo.png" id="main-logo" alt="" /></a>
+                        <Link to="/"><img src="logo.png" id="main-logo" alt="" /></Link>
                     </div>
                     <button 
                     className="toggle-button"
@@ -28,11 +28,11 @@ const Navbar = () => {
                     </button>
                     <div className="navbar-links">
                         <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/sessions">Sessions</a></li>
-                            <li><a href="teachers">Teachers</a></li>
-                            <li><a href="/profile">Profile</a></li>
-                            <li><a href="/login"><button className="button">login</button></a></li> 
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/sessions">Sessions</Link></li>
+                            <li><Link to="teachers">Teachers</Link></li>
+                            <li><Link to="/profile">Profile</Link></li>
+                            <li><Link to="/login"><button className="button">login</button></Link></li> 
                         </ul>
                     </div>
                     
