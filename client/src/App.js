@@ -2,6 +2,7 @@ import './index.css';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
   const [ users, setUsers ] = useState([{}]);
@@ -10,7 +11,7 @@ function App() {
     fetch("/api")
     .then( response => response.json() )
     .then( data => { 
-      setUsers(data)
+      setUsers(data.users)
       console.log(data);
     } )
   },[])
@@ -20,9 +21,10 @@ function App() {
       <Navbar></Navbar>
       <div className="main-wrapper">
           <div className="content-wrapper">
-
+            {users && <p>{users[0].email}</p>}
           </div>
       </div>
+      <Home></Home>
     </div>
   );
 }

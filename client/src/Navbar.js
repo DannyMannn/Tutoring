@@ -31,7 +31,8 @@ const Navbar = () => {
                             <li><a href="/">Home</a></li>
                             <li><a href="/sessions">Sessions</a></li>
                             <li><a href="teachers">Teachers</a></li>
-                            <li><a href="/profile">Profile</a></li> 
+                            <li><a href="/profile">Profile</a></li>
+                            <li><a href="/login"><button className="button">login</button></a></li> 
                         </ul>
                     </div>
                     
